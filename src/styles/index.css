@@ -29,20 +29,49 @@ body {
 .header-image {
   width: 55px;
   object-fit: contain;
-  padding-right: 0.5em;
+  margin-right: 0.8em;
 }
 
-.header-left {
-  display: flex;
-  flex-direction: row;
+.header-title {
+  margin-right: auto;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
-.title {
-  text-align: left;
-  font-size: 2rem;
-  font-weight: 400px;
-}
-
-.subtitle {
+.header-subtitle {
   font-size: 1.2rem;
+  font-weight: 500;
+}
+
+main {
+  padding: 3em;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 27px;
+}
+
+.form-input {
+  font-family: 'Karla', sans-serif;
+  padding: 1em;
+  font-size: 1rem;
+  color: #0d0d0d;
+  border: 1px solid #d5d4d8;
+  border-radius: 5px;
+}
+
+.form-button {
+  font-family: 'Karla', sans-serif;
+  height: 50px;
+  grid-column: 1 / -1;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+  color: #fff;
+  cursor: pointer;
 }
